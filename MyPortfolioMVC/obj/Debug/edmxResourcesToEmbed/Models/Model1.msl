@@ -80,7 +80,6 @@
         <MappingFragment StoreEntitySet="TblExpertises">
           <ScalarProperty Name="ExpertiseId" ColumnName="ExpertiseId" />
           <ScalarProperty Name="Title" ColumnName="Title" />
-          <ScalarProperty Name="Description" ColumnName="Description" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -125,6 +124,18 @@
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
           <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblAdmins">
+      <EntityTypeMapping TypeName="MyPortfofioDb6Model.TblAdmin">
+        <MappingFragment StoreEntitySet="TblAdmins">
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="AdmınId" ColumnName="AdmınId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -12,9 +12,13 @@ namespace MyPortfolioMVC.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class TblExpertis
+    public partial class TblAdmin
     {
-        public int ExpertiseId { get; set; }
-        public string Title { get; set; }
+        public int AdmınId { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string ImageUrl { get; set; }
     }
 }

@@ -20,6 +20,17 @@
     <Property Name="Description" Type="nvarchar" MaxLength="300" />
     <Property Name="CvUrl" Type="nvarchar(max)" />
   </EntityType>
+  <EntityType Name="TblAdmins">
+    <Key>
+      <PropertyRef Name="AdmınId" />
+    </Key>
+    <Property Name="AdmınId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Password" Type="nchar" MaxLength="8" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="50" />
+    <Property Name="ImageUrl" Type="nvarchar(max)" />
+  </EntityType>
   <EntityType Name="TblBanner">
     <Key>
       <PropertyRef Name="BannerId" />
@@ -73,7 +84,6 @@
     </Key>
     <Property Name="ExpertiseId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Title" Type="nvarchar" MaxLength="50" />
-    <Property Name="Description" Type="nvarchar" MaxLength="200" />
   </EntityType>
   <EntityType Name="TblMessages">
     <Key>
@@ -130,6 +140,7 @@
   <EntityContainer Name="MyPortfofioDb6ModelStoreContainer">
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblAbouts" EntityType="Self.TblAbouts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblAdmins" EntityType="Self.TblAdmins" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblBanner" EntityType="Self.TblBanner" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblCategories" EntityType="Self.TblCategories" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblContacts" EntityType="Self.TblContacts" Schema="dbo" store:Type="Tables" />
