@@ -7,16 +7,8 @@
       "RelativeMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|solutionrelative:myportfoliomvc\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\myportfoliomvc\\controllers\\defaultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|solutionrelative:myportfoliomvc\\controllers\\defaultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\myportfoliomvc\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|solutionrelative:myportfoliomvc\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\myportfoliomvc\\views\\default\\defaultexperience.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|solutionrelative:myportfoliomvc\\views\\default\\defaultexperience.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|c:\\users\\mert\\source\\repos\\myportfoliomvc\\myportfoliomvc\\views\\adminlayout\\adminlayouthead.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|solutionrelative:myportfoliomvc\\views\\adminlayout\\adminlayouthead.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -45,6 +37,27 @@
               "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminLayoutHead.cshtml",
+              "DocumentMoniker": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Views\\AdminLayout\\AdminLayoutHead.cshtml",
+              "RelativeDocumentMoniker": "MyPortfolioMVC\\Views\\AdminLayout\\AdminLayoutHead.cshtml",
+              "ToolTip": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Views\\AdminLayout\\AdminLayoutHead.cshtml",
+              "RelativeToolTip": "MyPortfolioMVC\\Views\\AdminLayout\\AdminLayoutHead.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-21T19:13:36.922Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
@@ -52,46 +65,10 @@
               "RelativeDocumentMoniker": "MyPortfolioMVC\\Views\\Default\\Index.cshtml",
               "ToolTip": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Views\\Default\\Index.cshtml",
               "RelativeToolTip": "MyPortfolioMVC\\Views\\Default\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAAAK8AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T19:29:23.882Z",
+              "WhenOpened": "2024-11-21T18:19:55.669Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DefaultController.cs",
-              "DocumentMoniker": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Controllers\\DefaultController.cs",
-              "RelativeDocumentMoniker": "MyPortfolioMVC\\Controllers\\DefaultController.cs",
-              "ToolTip": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Controllers\\DefaultController.cs",
-              "RelativeToolTip": "MyPortfolioMVC\\Controllers\\DefaultController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T19:29:20.856Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Views\\Login\\Index.cshtml",
-              "RelativeDocumentMoniker": "MyPortfolioMVC\\Views\\Login\\Index.cshtml",
-              "ToolTip": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Views\\Login\\Index.cshtml",
-              "RelativeToolTip": "MyPortfolioMVC\\Views\\Login\\Index.cshtml",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAswEcAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T19:03:07.365Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DefaultExperience.cshtml",
-              "DocumentMoniker": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Views\\Default\\DefaultExperience.cshtml",
-              "RelativeDocumentMoniker": "MyPortfolioMVC\\Views\\Default\\DefaultExperience.cshtml",
-              "ToolTip": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Views\\Default\\DefaultExperience.cshtml",
-              "RelativeToolTip": "MyPortfolioMVC\\Views\\Default\\DefaultExperience.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAACjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T18:57:12.121Z"
             }
           ]
         }

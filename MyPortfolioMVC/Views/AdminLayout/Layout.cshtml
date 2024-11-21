@@ -1,43 +1,37 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
+
 <!DOCTYPE html>
 <html lang="en">
 
-@Html.Partial("~/Views/AdminLayout/AdminLayoutHead.cshtml")
+@*@Html.Partial("~/Views/AdminLayout/AdminLayoutHead.cshtml")*@
+@Html.Action("AdminLayoutHead", "AdminLayout")
 
 <body>
     <div class="container-fluid position-relative d-flex p-0">
-        <!-- Spinner Start -->
-        @Html.Partial("~/Views/AdminLayout/AdminLayoutSpinner.cshtml")
-        <!-- Spinner End -->
-        <!-- Sidebar Start -->
-        @Html.Partial("~/Views/AdminLayout/AdminLayoutSidebar.cshtml")
-        <!-- Sidebar End -->
-        <!-- Content Start -->
+
+        @Html.Action("AdminLayoutSpinner", "AdminLayout")
+
+        @Html.Action("AdminLayoutSidebar", "AdminLayout")
+
+
         <div class="content">
-            <!-- Navbar Start -->
-            @Html.Partial("~/Views/AdminLayout/AdminLayoutNavbar.cshtml")
-            <!-- Navbar End -->
-            <!-- Blank Start -->
+
+            @Html.Action("AdminLayoutNavbar", "AdminLayout")
+
             <div class="container-fluid pt-4 px-4">
                 <div class="container-fluid bg-secondary">
                     @RenderBody()
                 </div>
             </div>
-            <!-- Blank End -->
-            <!-- Footer Start -->
-            @Html.Partial("~/Views/AdminLayout/AdminLayoutFooter.cshtml")
-            <!-- Footer End -->
+
+            @Html.Action("AdminLayoutFooter", "AdminLayout")
+
         </div>
-        <!-- Content End -->
-        <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-    <!-- JavaScript Libraries -->
-@Html.Partial("~/Views/AdminLayout/AdminLayoutSpricts.cshtml")
+    @Html.Action("AdminLayoutSpricts", "AdminLayout")
 </body>
-
 </html>

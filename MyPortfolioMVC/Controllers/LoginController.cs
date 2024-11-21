@@ -8,6 +8,7 @@ using System.Web.Security;
 
 namespace MyPortfolioMVC.Controllers
 {
+    [AllowAnonymous]
     public class LoginController : Controller
     {
         MyPortfofioDb6Entities db = new MyPortfofioDb6Entities();
@@ -20,17 +21,19 @@ namespace MyPortfolioMVC.Controllers
         [HttpPost]
         public ActionResult Index(TblAdmin model)
         {
-            var value = db.TblAdmins.FirstOrDefault(x=>x.Email==model.Email && x.Password==model.Password);
+            var value = db.TblAdmins.FirstOrDefault(x => x.Email == model.Email && x.Password == model.Password);
             if (value == null)
             {
-                ModelState.AddModelError("", "Email veya Şifre Hatalı.");
+                ModelState.AddModelError("", "Email veya Şifre hatalı");
                 return View(model);
             }
-            FormsAuthentication.SetAuthCookie(value.Email,false);
-            Session["nameSurname"]= value.Name + " " + value.Surname;
-            return RedirectToAction("Index","Category");
+            FormsAuthentication.SetAuthCookie(value.Email, false);
 
-            
+            Session["email"] = value.Email;
+            return RedirectToAction("Index", "Category");
+
+
+
         }
     }
 }

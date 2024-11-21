@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyPortfolioMVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity.Core.Mapping;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace MyPortfolioMVC.Controllers
 {
     public class AdminLayoutController : Controller
     {
-        
+        MyPortfofioDb6Entities db=new MyPortfofioDb6Entities();
         public ActionResult Layout()
         {
             return View();
@@ -32,11 +33,21 @@ namespace MyPortfolioMVC.Controllers
 
         public PartialViewResult AdminLayoutSidebar()
         {
+            var email = Session["email"].ToString();
+            var admin = db.TblAdmins.FirstOrDefault(x => x.Email == email);
+
+            ViewBag.nameSurname = admin.Name + " " + admin.Surname;
+            ViewBag.image = admin.ImageUrl;
             return PartialView();
         }
 
         public PartialViewResult AdminLayoutNavbar()
         {
+            var email = Session["email"].ToString();
+            var admin = db.TblAdmins.FirstOrDefault(x => x.Email == email);
+
+            ViewBag.nameSurname = admin.Name + " " + admin.Surname;
+            ViewBag.image = admin.ImageUrl;
             return PartialView();
         }
 
