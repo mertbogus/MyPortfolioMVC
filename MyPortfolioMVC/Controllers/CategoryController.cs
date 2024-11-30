@@ -10,7 +10,7 @@ namespace MyPortfolioMVC.Controllers
     public class CategoryController : Controller
     {
         MyPortfofioDb6Entities db = new MyPortfofioDb6Entities();
-        // GET: Category
+        
         public ActionResult Index()
         {
             var values = db.TblCategories.ToList();
