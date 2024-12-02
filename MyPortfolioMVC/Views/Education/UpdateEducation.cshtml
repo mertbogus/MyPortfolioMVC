@@ -6,7 +6,7 @@
 
 <h2>Eğitim Güncelleme Sayfası</h2>
 
-<form method="post">
+<form method="post" enctype="multipart/form-data">
     @Html.HiddenFor(x=>x.EducatıonId)
     <label>Okul Adı</label>
     @Html.TextBoxFor(x => x.SchoolName, new { @class = "form-control" })

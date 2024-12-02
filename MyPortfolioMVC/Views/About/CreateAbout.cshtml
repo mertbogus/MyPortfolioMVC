@@ -1,0 +1,23 @@
+﻿@model MyPortfolioMVC.Models.TblAbout
+@{
+    ViewBag.Title = "CreateAbout";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Yeni Oluştur</h2>
+<br />
+<form method="post">
+    <label>Başlık</label>
+    <input type="text" name="Title" class="form-control" />
+    <br />
+    <label>Açıklama</label>
+    <input type="text" name="Description" class="form-control" />
+    <br />
+    <label>Resim URL</label>
+    <input type="text" name="ImageUrl" class="form-control" />
+    <br />
+    <label>CV URL</label>
+    <input type="text" name="CvUrl" class="form-control" />
+    <br />
+    <button class="btn btn-primary">Kaydet</button>
+</form>
