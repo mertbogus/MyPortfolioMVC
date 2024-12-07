@@ -15,7 +15,7 @@ namespace MyPortfolioMVC.Controllers
         MyPortfofioDb6Entities db = new MyPortfofioDb6Entities();
         public ActionResult Index()
         {
-            var values=db.TblAbouts.ToList();
+            var values = db.TblAbouts.ToList();
             return View(values);
         }
 
@@ -36,6 +36,28 @@ namespace MyPortfolioMVC.Controllers
         [HttpPost]
         public ActionResult CreateAbout(TblAbout model)
         {
+            if (model.ImageFile != null)
+            {
+                var currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                var saveLocation = currentDirectory + "image\\";
+                var fileName = Path.Combine(saveLocation, model.ImageFile.FileName);
+                model.ImageFile.SaveAs(fileName);
+                model.ImageUrl = "/image/" + model.ImageFile.FileName;
+            }
+
+            if (model.CVFile != null)
+            {
+                string fileExtension = System.IO.Path.GetExtension(model.CVFile.FileName).ToLower();
+                if (fileExtension == ".pdf")
+                {
+                    var currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                    var saveLocation = currentDirectory + "CV\\";
+                    var fileName = Path.Combine(saveLocation, model.CVFile.FileName);
+                    model.CVFile.SaveAs(fileName);
+                    model.CvUrl = "/CV/" + model.CVFile.FileName;
+                }
+
+            }
             db.TblAbouts.Add(model);
             db.SaveChanges();
             return RedirectToAction("Index");
@@ -51,23 +73,38 @@ namespace MyPortfolioMVC.Controllers
         [HttpPost]
         public ActionResult UpdateAbout(TblAbout model)
         {
-            var imageurl="";
             var abouts = db.TblAbouts.Find(model.AboutId);
             if (model.ImageFile != null)
             {
-                
                 var currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
                 var saveLocation = currentDirectory + "image\\";
                 var fileName = Path.Combine(saveLocation, model.ImageFile.FileName);
                 model.ImageFile.SaveAs(fileName);
-                imageurl = "/image/" + model.ImageFile.FileName;
+                model.ImageUrl = "/image/" + model.ImageFile.FileName;
             }
-            abouts.Title = model.Title;
-            abouts.Description = model.Description;
-            abouts.ImageUrl=imageurl;
-            abouts.CvUrl=model.CvUrl;
+
+            if (model.CVFile != null)
+            {
+                string fileExtension = System.IO.Path.GetExtension(model.CVFile.FileName).ToLower();
+                if (fileExtension == ".pdf")
+                {
+                    var currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                    var saveLocation = currentDirectory + "CV\\";
+                    var fileName = Path.Combine(saveLocation, model.CVFile.FileName);
+                    model.CVFile.SaveAs(fileName);
+                    model.CvUrl = "/CV/" + model.CVFile.FileName;
+                }
+
+            }
+
+            abouts.Title =model.Title;
+            abouts.Description =model.Description;  
+            abouts.CvUrl = model.CvUrl;
+            abouts.ImageUrl = model.CvUrl;
+            db.TblAbouts.Add(model);
             db.SaveChanges();
             return RedirectToAction("Index");
+
         }
     }
 }

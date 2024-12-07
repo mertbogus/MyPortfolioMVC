@@ -1,0 +1,17 @@
+﻿@model MyPortfolioMVC.Models.TblSocialMedia
+@{
+    ViewBag.Title = "UpdateSocialMedia";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Sosyal Medya Güncelleme Sayfası</h2>
+<form method="post">
+    @Html.HiddenFor(x => x.SocialMediaId)
+    <label>Kategori Adı</label>
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <br />
+    @Html.TextBoxFor(x => x.Url, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-outline-success"> Güncelle</button>
+</form>
+

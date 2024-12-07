@@ -1,0 +1,42 @@
+﻿@model List<MyPortfolioMVC.Models.TblMessage>
+@{
+    ViewBag.Title = "MakeMessageRead";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+    int count = 0;
+}
+
+<h2>Okunan Mesajlar</h2>
+
+<table class="table table-bordered table-active">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Gönderen Ad Soyad</th>
+            <th>Email</th>
+            <th>Konu</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+
+        @foreach (var item in Model)
+        {
+            count++;
+            <tr>
+                <td>@count</td>
+                <td>@item.Name</td>
+                <td>@item.Email</td>
+                <td>@item.Subject</td>
+                <td><a href="/Message/DeleteMessage/@item.MessageId" class="btn btn-outline-danger">Sil</a> </td>
+            </tr>
+
+        }
+
+    </tbody>
+
+
+
+</table>
+

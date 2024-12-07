@@ -45,10 +45,10 @@ namespace MyPortfolioMVC.Controllers
         {
             var email = Session["email"].ToString();
             var admin = db.TblAdmins.FirstOrDefault(x => x.Email == email);
-
+            var message = db.TblMessages.Where(x => x.IsRead == false).Take(3).ToList();
             ViewBag.nameSurname = admin.Name + " " + admin.Surname;
             ViewBag.image = admin.ImageUrl;
-            return PartialView();
+            return PartialView(message);
         }
 
         public PartialViewResult AdminLayoutFooter()

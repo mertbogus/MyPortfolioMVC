@@ -14,10 +14,13 @@
     @Html.TextAreaFor(x => x.Description, new { @class = "form-control" })
     <br />
     <label>Resim Yükleyin</label>
-    <input type="file" name="ImageFile" />
     <br />
-    <label>CvURL</label>
-    @Html.TextBoxFor(x => x.CvUrl, new { @class = "form-control" })
-    <button class="btn btn-outline-success">Hakkımda Kısmını Güncelle</button>
+    <input type="file" name="ImageFile" style="margin-bottom:7px; margin-top:7px"  />
+    <br />
+    <label>CV Yükleyin</label>
+    <br />
+    <input type="file" name="CVFile" style="margin-bottom:7px; margin-top:7px" />
+    <br />
+    <button class="btn btn-outline-success mt-1">Hakkımda Kısmını Güncelle</button>
 </form>
 

@@ -86,6 +86,7 @@
     <EntitySetMapping Name="TblMessages">
       <EntityTypeMapping TypeName="MyPortfofioDb6Model.TblMessage">
         <MappingFragment StoreEntitySet="TblMessages">
+          <ScalarProperty Name="Date" ColumnName="Date" />
           <ScalarProperty Name="MessageId" ColumnName="MessageId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Email" ColumnName="Email" />

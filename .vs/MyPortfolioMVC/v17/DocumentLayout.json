@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|c:\\users\\mert\\source\\repos\\myportfoliomvc\\myportfoliomvc\\views\\socialmedia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|solutionrelative:myportfoliomvc\\views\\socialmedia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\myportfoliomvc\\views\\adminlayout\\adminlayoutnavbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|solutionrelative:myportfoliomvc\\views\\adminlayout\\adminlayoutnavbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|c:\\users\\mert\\source\\repos\\myportfoliomvc\\myportfoliomvc\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|solutionrelative:myportfoliomvc\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|c:\\users\\mert\\source\\repos\\myportfoliomvc\\myportfoliomvc\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|solutionrelative:myportfoliomvc\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|c:\\users\\mert\\source\\repos\\myportfoliomvc\\myportfoliomvc\\controllers\\socialmediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|solutionrelative:myportfoliomvc\\controllers\\socialmediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|c:\\users\\mert\\source\\repos\\myportfoliomvc\\myportfoliomvc\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8DF6ED0-4477-4436-820C-19209EC0E645}|MyPortfolioMVC\\MyPortfolioMvc.csproj|solutionrelative:myportfoliomvc\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +22,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "MyPortfolioMVC\\Views\\Contact\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "MyPortfolioMVC\\Views\\Contact\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T01:02:42.789Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -51,40 +65,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Views\\Default\\Index.cshtml",
-              "RelativeDocumentMoniker": "MyPortfolioMVC\\Views\\Default\\Index.cshtml",
-              "ToolTip": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Views\\Default\\Index.cshtml",
-              "RelativeToolTip": "MyPortfolioMVC\\Views\\Default\\Index.cshtml",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAAGkAAAB7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T21:01:20.176Z",
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "MyPortfolioMVC\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "MyPortfolioMVC\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T01:02:38.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Views\\SocialMedia\\Index.cshtml",
-              "RelativeDocumentMoniker": "MyPortfolioMVC\\Views\\SocialMedia\\Index.cshtml",
-              "ToolTip": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Views\\SocialMedia\\Index.cshtml",
-              "RelativeToolTip": "MyPortfolioMVC\\Views\\SocialMedia\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Title": "AdminLayoutNavbar.cshtml",
+              "DocumentMoniker": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Views\\AdminLayout\\AdminLayoutNavbar.cshtml",
+              "RelativeDocumentMoniker": "MyPortfolioMVC\\Views\\AdminLayout\\AdminLayoutNavbar.cshtml",
+              "ToolTip": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Views\\AdminLayout\\AdminLayoutNavbar.cshtml",
+              "RelativeToolTip": "MyPortfolioMVC\\Views\\AdminLayout\\AdminLayoutNavbar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T20:59:56.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SocialMediaController.cs",
-              "DocumentMoniker": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Controllers\\SocialMediaController.cs",
-              "RelativeDocumentMoniker": "MyPortfolioMVC\\Controllers\\SocialMediaController.cs",
-              "ToolTip": "C:\\Users\\MERT\\source\\repos\\MyPortfolioMVC\\MyPortfolioMVC\\Controllers\\SocialMediaController.cs",
-              "RelativeToolTip": "MyPortfolioMVC\\Controllers\\SocialMediaController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T20:57:20.179Z",
+              "WhenOpened": "2024-12-07T00:34:57.347Z",
               "EditorCaption": ""
             }
           ]

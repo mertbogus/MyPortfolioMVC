@@ -17,7 +17,7 @@
     <Property Name="AboutId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ImageUrl" Type="nvarchar(max)" />
     <Property Name="Title" Type="nvarchar" MaxLength="50" />
-    <Property Name="Description" Type="nvarchar" MaxLength="300" />
+    <Property Name="Description" Type="nvarchar" MaxLength="900" />
     <Property Name="CvUrl" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="TblAdmins">
@@ -95,6 +95,7 @@
     <Property Name="Subject" Type="nvarchar" MaxLength="50" />
     <Property Name="MessageContent" Type="nvarchar" MaxLength="300" />
     <Property Name="IsRead" Type="bit" />
+    <Property Name="Date" Type="datetime" />
   </EntityType>
   <EntityType Name="TblProjects">
     <Key>

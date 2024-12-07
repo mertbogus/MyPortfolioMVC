@@ -1,8 +1,36 @@
-﻿
+﻿@model List<MyPortfolioMVC.Models.TblSocialMedia>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/AdminLayout/Layout.cshtml";
+    int count = 0;
 }
 
-<h2>Index</h2>
+<h2>Sosyal Medya Hesaplarım</h2>
+<br />
+<table class="table table-bordered">
+       <thead>
+    <tr>
+        <td>#</td>
+        <td>Sosyal Medya Adı</td>
+        <td>Link</td>
+        <td>Sil</td>
+        <td>Güncelle</td>
+    </tr>
+        </thead>
+       <tbody>
+           @foreach (var item in Model)
+           {
+               count++;
+               <tr>
+                   <td>@count</td>
+                   <td>@item.Name</td>
+                   <td>@item.Url</td>
+                   <td><a href="/SocialMedia/DeleteSocialMedia/@item.SocialMediaId" class="btn btn-outline-danger"> Sil</a></td>
+                   <td><a href="/SocialMedia/UpdateSocialMedia/@item.SocialMediaId" class="btn btn-outline-info"> Güncelle</a></td>
+               </tr>
+           }
+       </tbody>
+</table>
+<br />
+<a href="/SocialMedia/CreateSocialMedia" class="btn btn-success"> Yeni Kategori Ekle</a>
 

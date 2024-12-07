@@ -1,23 +1,29 @@
-﻿@model List<MyPortfolioMVC.Models.TblBanner>
+﻿@model Tuple<List<MyPortfolioMVC.Models.TblBanner>, List<MyPortfolioMVC.Models.TblSocialMedia>>
 <section id="intro" class="s-intro target-section">
 
     <div class="row intro-content wide">
-    @foreach (var item in Model) { 
-        <div class="column">
-            <div class="text-pretitle with-line">
-                @item.Title
+        @foreach (var item in Model.Item1)
+        {
+
+            <div class="column">
+                @if (item.IsShown == true)
+                {
+                    <div class="text-pretitle with-line">
+                        @item.Title
+                    </div>
+
+                    <h1 class="text-huge-title">
+                        @item.Description
+                    </h1>
+                }
             </div>
-            
-            <h1 class="text-huge-title">
-                @item.Description
-            </h1>
-        </div>
-    }
+        }
+
         <ul class="intro-social">
-            <li><a href="#0">Behance</a></li>
-            <li><a href="#0">Twitter</a></li>
-            <li><a href="#0">Dribbble</a></li>
-            <li><a href="#0">Instagram</a></li>
+            @foreach (var social in Model.Item2)
+            {
+                <li><a href="@social.Url">@social.Name</a></li>
+            }
         </ul>
 
     </div> <!-- end intro content -->

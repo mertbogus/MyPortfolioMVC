@@ -22,7 +22,7 @@
           <Property Name="AboutId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ImageUrl" Type="nvarchar(max)" />
           <Property Name="Title" Type="nvarchar" MaxLength="50" />
-          <Property Name="Description" Type="nvarchar" MaxLength="300" />
+          <Property Name="Description" Type="nvarchar" MaxLength="900" />
           <Property Name="CvUrl" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="TblAdmins">
@@ -100,6 +100,7 @@
           <Property Name="Subject" Type="nvarchar" MaxLength="50" />
           <Property Name="MessageContent" Type="nvarchar" MaxLength="300" />
           <Property Name="IsRead" Type="bit" />
+          <Property Name="Date" Type="datetime" />
         </EntityType>
         <EntityType Name="TblProjects">
           <Key>
@@ -182,7 +183,7 @@
           <Property Name="AboutId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ImageUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Description" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="900" FixedLength="false" Unicode="true" />
           <Property Name="CvUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="TblBanner">
@@ -250,6 +251,7 @@
           <Property Name="Subject" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="MessageContent" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
           <Property Name="IsRead" Type="Boolean" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="TblProject">
           <Key>
@@ -414,6 +416,7 @@
           <EntitySetMapping Name="TblMessages">
             <EntityTypeMapping TypeName="MyPortfofioDb6Model.TblMessage">
               <MappingFragment StoreEntitySet="TblMessages">
+                <ScalarProperty Name="Date" ColumnName="Date" />
                 <ScalarProperty Name="MessageId" ColumnName="MessageId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Email" ColumnName="Email" />

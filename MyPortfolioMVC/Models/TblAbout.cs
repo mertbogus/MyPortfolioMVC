@@ -21,8 +21,15 @@ namespace MyPortfolioMVC.Models
         public string Title { get; set; }
         public string Description { get; set; }
         public string CvUrl { get; set; }
+    }
 
+    public partial class TblAbout
+    {
         [NotMapped]
         public HttpPostedFileBase ImageFile { get; set; }
+
+        [NotMapped]
+        public HttpPostedFileBase CVFile { get; set; }
     }
 }
+
