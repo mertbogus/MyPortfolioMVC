@@ -51,7 +51,6 @@ namespace MyPortfolioMVC.Controllers
             var contact = db.TblContacts.Find(conttacts.ContactId);
             contact.Phone = conttacts.Phone;
             contact.Email = conttacts.Email;
-            db.TblContacts.Add(contact);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

@@ -18,5 +18,14 @@ namespace MyPortfolioMVC
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+
+        protected void Application_AuthorizeRequest(object sender, EventArgs e)
+        {
+            if (HttpContext.Current.Session != null && HttpContext.Current.Session["email"] == null)
+            {
+                // Oturum süresi dolmuşsa login sayfasına yönlendir
+                HttpContext.Current.Response.Redirect("~/Profil/Index");
+            }
+        }
     }
 }

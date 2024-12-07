@@ -57,6 +57,7 @@ namespace MyPortfolioMVC.Controllers
         [HttpPost]
         public ActionResult UpdateTestimonial(TblTestimonial model)
         {
+            var testimonials = db.TblTestimonials.Find(model.TestimonialId);
             if (model.ImageFile != null)
             {
                 var currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
@@ -64,11 +65,11 @@ namespace MyPortfolioMVC.Controllers
                 var fileName = Path.Combine(saveLocation, model.ImageFile.FileName);
                 model.ImageFile.SaveAs(fileName);
                 model.ImageUrl = "/image/" + model.ImageFile.FileName;
+                testimonials.ImageUrl = model.ImageUrl;
             }
-            var testimonials = db.TblTestimonials.Find(model.TestimonialId);
+            
             testimonials.NameSurname = model.NameSurname;
             testimonials.Title=model.Title;
-            testimonials.ImageUrl = model.ImageUrl;
             testimonials.Comments = model.Comments;
             db.SaveChanges();
             return RedirectToAction("Index");

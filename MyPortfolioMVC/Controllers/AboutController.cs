@@ -81,6 +81,7 @@ namespace MyPortfolioMVC.Controllers
                 var fileName = Path.Combine(saveLocation, model.ImageFile.FileName);
                 model.ImageFile.SaveAs(fileName);
                 model.ImageUrl = "/image/" + model.ImageFile.FileName;
+                abouts.ImageUrl = model.ImageUrl;
             }
 
             if (model.CVFile != null)
@@ -93,15 +94,14 @@ namespace MyPortfolioMVC.Controllers
                     var fileName = Path.Combine(saveLocation, model.CVFile.FileName);
                     model.CVFile.SaveAs(fileName);
                     model.CvUrl = "/CV/" + model.CVFile.FileName;
+                    abouts.CvUrl = model.CvUrl;
                 }
 
             }
 
-            abouts.Title =model.Title;
-            abouts.Description =model.Description;  
-            abouts.CvUrl = model.CvUrl;
-            abouts.ImageUrl = model.CvUrl;
-            db.TblAbouts.Add(model);
+            
+            abouts.Title = model.Title;
+            abouts.Description = model.Description;
             db.SaveChanges();
             return RedirectToAction("Index");
 
